@@ -27,3 +27,4 @@ console.log(generaEmail)
 
 // pulsante
 btn.addEventListener(`click`,generaEmail);
+
