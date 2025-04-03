@@ -1,3 +1,6 @@
+// recupero elementi
+const extractEmail = document.getElementById(`extractEmail`)
+
 // faccio chiamata http per creare randomicamente una email
 
 axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`).then((resp) => {
@@ -8,10 +11,15 @@ axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`).then((resp)
 
 const generaEmail = () => {
     for(let i=0; i<10; i++){
+        let email
         axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`).then((resp) => {
-            console.log(resp.data.response)
+            email =resp.data.response 
+            extractEmail.innerHTML += `<li>${email}</li>`;;
         })
     }
 }
 generaEmail()
 console.log(generaEmail)
+
+
+
