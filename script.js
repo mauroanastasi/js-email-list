@@ -14,6 +14,7 @@ const generaEmail = () => {
         let email
         axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`).then((resp) => {
             email =resp.data.response 
+            // visualizzo in html le email generate
             extractEmail.innerHTML += `<li>${email}</li>`;;
         })
     }
