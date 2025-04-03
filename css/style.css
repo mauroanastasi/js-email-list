@@ -1,0 +1,21 @@
+body{
+    background-image: url(../img/cityPixel.jpg);
+    background-size: cover;
+}
+
+/* .card-body{
+    background-color: hwb(308 59% 1%);
+} */
+
+.card{
+    background-image: url(../img/stelleeeeee.webp);
+    background-size: 90%;
+
+}
+
+.card-header{
+    background-color:hsl(309, 23%, 27%);
+}
+.card-footer{
+    background-color:#bd89b6;
+}
