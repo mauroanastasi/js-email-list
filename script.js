@@ -11,7 +11,9 @@ axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`).then((resp)
 // creo funziona che genererà 10 volte la chiamata(quindi 10 email)
 
 const generaEmail = () => {
+    // tolgo ogni volta le email precedenti
     extractEmail.innerHTML = '';
+    // ciclo api 10 volte
     for(let i=0; i<10; i++){
         let email
         axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`).then((resp) => {
